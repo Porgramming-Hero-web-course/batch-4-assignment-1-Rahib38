@@ -1,10 +1,10 @@
-### The significance of union and intersection types in ### Union and Intersection Types in TypeScript: A Quick Guide
+# The significance of union and intersection types in Typescript.
 
-# _Union Types_
+## _Union Types_
 
 Union types allow a variable to be one of multiple types. Think of it as “either/or.”
 
-# Example:
+## Example:
 
 ```tsx
 let userId: number | string;
@@ -12,7 +12,7 @@ userId = 123; // valid
 userId = "abc123"; // also valid
 ```
 
-# _Benefits of Union Types_:
+## _Benefits of Union Types_:
 
 - _Flexibility_: Supports multiple types for a variable.
 - _Readability_: Clarifies that a variable can be of different types.
@@ -20,11 +20,11 @@ userId = "abc123"; // also valid
 
 ---
 
-# _Intersection Types_
+## _Intersection Types_
 
 Intersection types combine multiple types into one. It’s like saying, “must include both.”
 
-# Example:
+## Example:
 
 ```tsx
 type Person = { name: string };
@@ -38,7 +38,7 @@ let john: EmployeePerson = {
 };
 ```
 
-# _Benefits of Intersection Types_:
+## _Benefits of Intersection Types_:
 
 - _Combining Structures_: Creates complex types by merging properties.
 - _Ensures Consistency_: Guarantees that an object includes all properties.
@@ -46,7 +46,7 @@ let john: EmployeePerson = {
 
 ---
 
-### When to Use Them
+## When to Use Them
 
 - _Use Union Types_ when a variable could be one of several types.
 - _Use Intersection Types_ when a type must include multiple sets of properties.
