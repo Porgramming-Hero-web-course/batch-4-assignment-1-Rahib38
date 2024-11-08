@@ -1,0 +1,9 @@
+{
+  function countWordOccurrences(sentence: string, word: string): number {
+    const words = sentence.toLowerCase().split(" ");
+    const wordTarget = word.toLowerCase();
+
+    const totalWord = words.filter((w) => w === wordTarget).length;
+    return totalWord;
+  }
+}
